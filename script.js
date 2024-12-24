@@ -47,7 +47,8 @@ $(document).ready(function () {
 
       }),
       success: function (response) {
-        alert('Job is created');
+        $('#dealForm').hide();
+        $('.message').show(); 
 
         $('#dealForm')[0].reset();
       },
