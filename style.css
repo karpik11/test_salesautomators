@@ -74,5 +74,7 @@ option {
 }
 
 .AppExtensionsBlocks_iframe__FfKlV {
-  width: 1000px !important;
+    box-sizing: border-box;
+    padding: 0;
+    width: 1040px !important;
 }
