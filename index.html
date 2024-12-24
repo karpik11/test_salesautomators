@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма для сделки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <form id="dealForm" data-netlify="true">
+    <div class="container">
+
+      <div class="form-section">
+        <h2>Client Details</h2>
+        <div class="input_flex">
+          <label for="firstName"></label>
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <label for="lastName"></label>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+        <label for="phone"></label>
+        <input type="tel" id="phone" placeholder="Phone" required>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Email (optional)">
+      </div>
+
+      <div class="form-section">
+        <h2>Job Details</h2>
+        <div class="input_flex">
+          <label for="jobType"></label>
+          <select id="jobType" required>
+            <option value="" disabled selected>Job Type</option>
+            <option value="type1">Type 1</option>
+            <option value="type2">Type 2</option>
+            <option value="type3">Type 3</option>
+          </select>
+          <label for="jobSource"></label>
+          <select id="jobSource" required>
+            <option value="" disabled selected>Job Source</option>
+            <option value="source1">Source 1</option>
+            <option value="source2">Source 2</option>
+            <option value="source3">Source 3</option>
+          </select>
+        </div>
+        <label for="jobDescription"></label>
+        <textarea id="jobDescription" rows="4" placeholder="Job Description" required></textarea>
+      </div>
+
+      <div class="form-section">
+        <h2>Service Location</h2>
+        <label for="address"></label>
+        <input type="text" id="address" placeholder="Address" required>
+        <label for="city"></label>
+        <input type="text" id="city" placeholder="City" required>
+        <label for="state"></label>
+        <input type="text" id="state" placeholder="State" required>
+        <div class="input_flex">
+          <label for="zipCode"></label>
+          <input type="text" id="zipCode" placeholder="Zip Code" required>
+          <label for="area"></label>
+          <select id="area" required>
+            <option value="" disabled selected>Area</option>
+            <option value="area1">Area 1</option>
+            <option value="area2">Area 2</option>
+            <option value="area3">Area 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Scheduled</h2>
+        <label for="startDate"></label>
+        <input type="date" id="startDate" placeholder="Start Date" required>
+        <div class="input_flex">
+          <label for="startTime"></label>
+          <input type="time" id="startTime" placeholder="Start Time" required>
+          <label for="endTime"></label>
+          <input type="time" id="endTime" placeholder="End Time" required>
+        </div>
+        <label for="testSelect"></label>
+        <select id="testSelect" required>
+          <option value="" disabled selected>Select option</option>
+          <option value="test1">Test 1</option>
+          <option value="test2">Test 2</option>
+          <option value="test3">Test 3</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn" type="submit">Create job</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
