@@ -11,9 +11,15 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@pipedrive/app-extensions-sdk@0/dist/index.umd.js"></script>
 </head>
 
 <body>
+  <script>
+    (async function() {
+      const sdk = await new AppExtensionsSDK().initialize();
+    })();
+  </script>
   <form id="dealForm" data-netlify="true">
     <div class="container">
 
