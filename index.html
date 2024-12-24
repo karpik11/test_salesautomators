@@ -18,8 +18,7 @@
   <script>
     (async function() {
       const sdk = await new AppExtensionsSDK().initialize();
-      const sdk = await new AppExtensionsSDK({ identifier: 'e2827fe7-a44a-4ea0-ba83-3ac45faaa419' })
-  .initialize({ size: { height: 600; width: 1040 } });
+      await sdk.execute(Command.RESIZE, { height: 600 });
      
     })();
   </script>
