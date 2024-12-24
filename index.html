@@ -18,7 +18,9 @@
   <script>
     (async function() {
       const sdk = await new AppExtensionsSDK().initialize();
-       await new Promise(resolve => setTimeout(resolve, 100));
+       const Command = {
+        RESIZE: 'resize'
+    };
       await sdk.execute(Command.RESIZE, { height: 600 });
      
     })();
